@@ -7,7 +7,7 @@
 </div>
 </template>
 <script setup lang="ts">
-import { useCounterStore } from "../../model/store/counter";
+import { useCounterStore } from "../model/store/counter";
 const counterStore = useCounterStore();
 </script>
 <style lang="scss">

@@ -1,3 +1,3 @@
-import CounterTest from './ui/CounterTest/CounterTest.vue';
+import CounterTest from './ui/CounterTest.vue';
 
 export { CounterTest }

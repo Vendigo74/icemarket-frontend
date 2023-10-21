@@ -1,29 +1,25 @@
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/shared/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+     <Navbar />
     </div>
   </header>
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import { Navbar } from "@/widgets/Navbar";
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   line-height: 1.5;
   max-height: 100vh;
+  display: flex;
 }
 
 .logo {
@@ -36,6 +32,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
 }
 
 nav a.router-link-exact-active {
@@ -83,3 +80,4 @@ nav a:first-of-type {
   }
 }
 </style>
+@/widgets/Navbar
